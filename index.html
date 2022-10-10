@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/157c180833.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins';
+            text-align: center;
+            background-color: rgb(241, 241, 241);
+            /* background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; */
+        }
+
+        #instagram-logo {
+            position:absolute;
+            height: 10rem;
+            width: auto;
+            /* background-color: yellow; */
+            margin-left: -7.5rem;
+            margin-top: 4.5rem;
+        }
+
+        .login {
+            height: 25rem ;
+            width: 22rem;
+            background-color: white;
+            border: 0.1rem solid rgb(212, 212, 212);
+            /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5); */
+            padding: 2rem;
+            margin-top: 6rem;
+            border-radius: 0.1rem;
+        }
+
+
+        .login #username {
+            height: 2.5rem;
+            margin-bottom: 0.5rem;
+            margin-top: 5rem;
+        }
+
+        
+        .login #password {
+            height: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        input {
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1.5rem;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0.2rem;
+            border: 0.1rem solid grey;
+            /* box-shadow: 2px 2px rgb(0, 0, 0, 0.5); */
+        }
+
+        input:hover {
+            background-color: rgb(230, 228, 228);
+        }
+
+        button {
+            margin-top: 0;
+            color: white;
+            display: inline-block;
+            background-color: #5890FF;
+            width: 100%;
+            height: 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 0.2rem;
+            border-style: none;
+        }
+
+        button:hover {
+            background-color: #2d6ceb;
+        }
+
+        #loginfb {
+            display: inline-block;
+            color: #2d6ceb;
+            font-weight: 400;
+            font-size: small;
+            padding-left: 1.7rem;
+            margin-top: 1.5rem;
+            text-decoration: none;
+        }
+
+        #forgot {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 0.7rem;
+            margin-top: 1.2rem;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .fa-square-facebook {
+            position: absolute;
+            align-items: center;
+            padding-top: 1.6rem;
+        }
+
+        .or {
+            display: flex;
+            padding-top: 1rem;
+            align-items: center;
+            padding-left: 0.5rem;
+            justify-items: center;
+        }
+
+        p {
+            padding: 0 1rem;
+            color: rgb(128, 128, 128, 0.5);
+        }
+
+        .signup p {
+            /* box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5); */
+            width: 22rem;
+            color: black;
+            font-size: small;
+            background-color: white;
+            padding: 1.5rem 0;
+            margin-top: 1rem;
+            border: 0.1rem solid rgb(212, 212, 212);
+            border-radius: 0.1rem;
+        }
+
+        .signup p a {
+            text-decoration: none;
+        }
+
+        #getapp {
+            color: black;
+            font-size: small;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn  {
+            position:absolute;
+            display:grid ;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .appstore {
+            width: 135px;
+            margin-left: 1.8rem;
+        }
+
+        .googlestore {
+            width: 150px;
+        }
+
+    </style>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <section>
+        <img id="instagram-logo" src="/Instagram/Images/instagram-logo.svg" alt="registration-icon">
+        
+        <form >
+            <div class="login">
+
+                <input type="text" id="username" placeholder="Phone number, username or email">
+
+                <input type="password" id="password" placeholder="Password">
+
+                <button onclick="saveFile()">Log in</button>
+
+                <span class="or"><hr size="0.5" width="40%%" color="grey"><p>OR</p><hr size="0.5" width="40%%" color="grey"></span>
+
+                <i class="fa-brands fa-square-facebook"></i>
+                <a href="" id="loginfb">Log in with Facebook</a> <br>
+
+                <a href="" id="forgot">Forgotten password?</a>
+            </div>
+        </form>
+
+        <section class="signup">
+            <p>Don't have an account? <a href="">Sign up</a></p>
+        </section>
+        <p id="getapp">Get the app</p>
+        <section class="btn">
+            
+            <div>
+                <a href="https://apps.apple.com/in/app/instagram/id389801252" target="_blank"><img class="appstore" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"/></a>
+            </div>
+            
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_IN&gl=US" target="_blank"><img class="googlestore" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png" alt="Google Store"/></a>
+            </div>
+        </section>
+
+    </section>
+</body>
+
+<script>
+
+    let saveFile = () => {
+        // Get data from each element
+        const fname = document.getElementById('username');
+        const lname = document.getElementById('password');
+ 
+
+        // Variable to store all data in text format
+        let data =
+        'Username: ' + username.value + '\n' +
+        'Password: ' + password.value + '\n' ;
+
+        //Convert text to blob
+        const texttoBLOB = new Blob([data], {type: 'text/plain'} ) ;
+        const FileName = 'formData.txt'
+
+        let newLink = document.createElement("a")
+        newLink.download = FileName ;
+
+        if(window.webkitURL !=null) {
+            newLink.href = window.webkitURL.createObjectURL(texttoBLOB) ;
+        }
+        else {
+            newLink.href = window.createObjectURL(texttoBLOB);
+            newLink.style.display = "none" ;
+            document.body.appendChild(newLink) ;
+        }
+
+        newLink.click() ;
+
+    }
+
+
+</script>
+</html>
